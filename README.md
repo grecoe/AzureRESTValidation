@@ -1,4 +1,7 @@
 # AzureRESTValidation
+<sub>Dan Grecoe is a Microsoft Employee</sub>
+
+
 Examples on how to validate with Azure Resource Manager REST API's 
 
 The main goal of this example is to show how to obtain a bearer token to perform tasks in the Auzre Resource Manager layer. 
