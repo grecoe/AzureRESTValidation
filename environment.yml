@@ -1,0 +1,8 @@
+name: AzureRest
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9.2
+  - pip==21.2.4
+  - pip:    
+    - azure-identity==1.6.1

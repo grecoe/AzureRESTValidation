@@ -1,0 +1,22 @@
+{
+    "usePrincipal" : false,
+    "servicePrincipal": {
+        "description" : "These are the service principal credentials if not using cli creds",
+        "application" : "SP_APPLICATION_ID",
+        "credential" : "SP_SECRET",
+        "tenent" : "SP_TENENT"
+    },
+    "appointee" : {
+        "description" : "AAD info for user/group to assign the right to",
+        "tenent" : "USER_FOR_GET_SECRET_RIGHT_TENENT",
+        "object" : "USER_FOR_GET_SECRET_RIGHT_OBJECT_ID"
+    },
+    "keyVaultInformation" :{
+        "description" : "Vault to give appointee secret get permission",
+        "subscription" : "SUBSCRIPTION_FOR_KEY_VAULT",
+        "resourceGroup" : "RESOURCE_GROUP_FOR_KEY_VAULT",
+        "keyVaultName" : "NAME_OF_KEY_VAULT",
+        "keyVaultOperation" : "add",
+        "keyVaultApiVersion" : "2019-09-01"
+    }
+}
