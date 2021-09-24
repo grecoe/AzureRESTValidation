@@ -3,6 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# CSharp
+.vs/
+bin/
+obj/
+*.sln
+
 # C extensions
 *.so
 
