@@ -18,7 +18,7 @@ namespace AzureCredentials.Contexts.BaseUtils
 			this.Principal = principal;
 		}
 
-		public async Task<string> GetServiceToken()
+		public virtual async Task<string> GetServiceToken()
 		{
 			string ticket = string.Empty;
 			var httpClient = new HttpClient

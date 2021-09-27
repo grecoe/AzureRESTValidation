@@ -32,6 +32,12 @@ namespace AzureCredentials
             ParttnerPortalContext amaContext = new ParttnerPortalContext(amaPrincipal);
             ManagementContext mgtContext = new ManagementContext(mgtPrincipal);
             ActiveDirectoryContext aadContext = new ActiveDirectoryContext(mgtPrincipal);
+            AzureCliContext cliContext = new AzureCliContext();
+
+            string cli_cred = cliContext.GetServiceToken().Result;
+            Console.WriteLine("CLI Token");
+            Console.WriteLine(cli_cred);
+
 
             string management_cred = (string)mgtContext.GetServiceToken().Result;
             Console.WriteLine("Management Token");
